@@ -1,5 +1,4 @@
-package com.example.demo.springboot.Model;
-import org.springframework.stereotype.Indexed;
+package com.example.demo.springboot.Model.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,6 +18,8 @@ public class Usuario {
     private String contrasena;
     private String rol;
 
+    public Usuario(){}
+
     // Getters and Setters
     public Long getId() {
         return id;
@@ -29,7 +30,7 @@ public class Usuario {
     public String getNombre() {
         return nombre;
     }
-    public void setNombre(){
+    public void setNombre(String nombre){
         this.nombre = nombre;
     }
     public String getEmail() {
